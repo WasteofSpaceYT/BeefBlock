@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern":
+  [
+    "b"
+  ],
+  "key":
+  {
+    "b":
+    {
+      "tag": "beefblock:beefblockblock"
+    }
+  },
+  "result":
+  {
+    "item": "beefblock:beefblock"
+  }
+}

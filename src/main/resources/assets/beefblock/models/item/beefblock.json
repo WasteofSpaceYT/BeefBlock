@@ -1,0 +1,6 @@
+{
+  "parent": "Item/generated",
+  "textures": {
+    "layer0": "beefblock:item/beefblock.png"
+  }
+}

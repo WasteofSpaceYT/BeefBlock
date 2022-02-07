@@ -4,6 +4,7 @@ import com.waste.beefblock.Item.ModItems;
 import com.waste.beefblock.beefblock;
 import net.minecraft.block.AbstractBlock;
 import net.minecraft.block.Block;
+import net.minecraft.block.SoundType;
 import net.minecraft.block.material.Material;
 import net.minecraft.item.BlockItem;
 import net.minecraft.item.Item;
@@ -19,7 +20,7 @@ public class ModBlocks {
 
     public static DeferredRegister<Block>
             Blocks = DeferredRegister.create(ForgeRegistries.BLOCKS, beefblock.MOD_ID);
-    public static RegistryObject<Block> beefblockblock = registerBlock("beefblockblock", () -> new Block(AbstractBlock.Properties.create(Material.NETHER_PLANTS).hardnessAndResistance(3f)));
+    public static RegistryObject<Block> beefblockblock = registerBlock("beefblockblock", () -> new Block(AbstractBlock.Properties.create(Material.NETHER_PLANTS).hardnessAndResistance(3f).sound(SoundType.HONEY)));
 
     public static <T extends Block>RegistryObject<T> registerBlock(String name, Supplier<T> block){
         RegistryObject<T> toReturn = Blocks.register(name, block);
